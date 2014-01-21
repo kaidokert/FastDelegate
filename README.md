@@ -7,15 +7,16 @@ There is the unofficial V2 version which in my humbled opinion is much better. T
 
 
 Original source/link
-====================
+--------------------
 https://sites.google.com/site/ceniza666/cpp
 
 http://www.codeproject.com/Messages/4489700/Cplusplus11.aspx
 
 
 Credits
-=======
-Don Clugston,
+-------
+Don Clugston
+
 Ceniza
 
 
