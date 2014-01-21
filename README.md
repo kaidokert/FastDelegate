@@ -17,7 +17,7 @@ Credits
 -------
 Don Clugston
 
-Ceniza
+Paúl Jiménez(Ceniza)
 
 
 Disclaimer
