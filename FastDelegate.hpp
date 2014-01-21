@@ -390,7 +390,7 @@ struct SimplifyMemFunc<SINGLE_MEMFUNCPTR_SIZE + 2*sizeof(int) >
 			MicrosoftVirtualMFP s;
 		} u2;
 		// Check that the horrible_cast<>s will work
-		static_cast(sizeof(function_to_bind)==sizeof(u.s) && sizeof(function_to_bind)==sizeof(u.ProbeFunc) && sizeof(u2.virtfunc)==sizeof(u2.s), "Cannot use horrible_cast<>");
+		static_assert(sizeof(function_to_bind)==sizeof(u.s) && sizeof(function_to_bind)==sizeof(u.ProbeFunc) && sizeof(u2.virtfunc)==sizeof(u2.s), "Cannot use horrible_cast<>");
 		/*typedef int ERROR_CantUsehorrible_cast[sizeof(function_to_bind)==sizeof(u.s)
 			&& sizeof(function_to_bind)==sizeof(u.ProbeFunc)
 			&& sizeof(u2.virtfunc)==sizeof(u2.s) ? 1 : -1];*/
@@ -426,7 +426,7 @@ struct SimplifyMemFunc<SINGLE_MEMFUNCPTR_SIZE + 3*sizeof(int) >
 			} s;
 		} u;
 		// Check that the horrible_cast will work
-		static_cast(sizeof(XFuncType)==sizeof(u.s), "Cannot use horrible_cast<>");
+		static_assert(sizeof(XFuncType)==sizeof(u.s), "Cannot use horrible_cast<>");
 		//typedef int ERROR_CantUsehorrible_cast[sizeof(XFuncType)==sizeof(u.s)? 1 : -1];
 		u.func = function_to_bind;
 		bound_func = u.s.funcaddress;
