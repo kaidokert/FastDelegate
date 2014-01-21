@@ -1,10 +1,12 @@
-//						FastDelegate.h
+//						FastDelegate.hpp
 //	Efficient delegates in C++ that generate only two lines of asm code!
 //  Documentation is found at http://www.codeproject.com/cpp/FastDelegate.asp
 //
 //						- Don Clugston, Mar 2004.
 //		Major contributions were made by Jody Hagins.
 //      Version 2.0 by Paúl Jiménez.
+//		Version 2.0.1 by YanXiang Benjamin Huang
+//
 // History:
 // 24-Apr-04 1.0  * Submitted to CodeProject.
 // 28-Apr-04 1.1  * Prevent most unsafe uses of evil static function hack.
@@ -51,6 +53,7 @@
 //                * Use variadic templates (C++11)
 //                * Added MakeDelegate for plain function pointers
 //                * Use static_assert for compile-time checks (C++11)
+// 21-Jan-14 2.0.1* Fixed 2 typos (line 393 & 429) where a static_cast should have been a static_assert. 
 
 #ifndef FASTDELEGATE_H
 #define FASTDELEGATE_H
