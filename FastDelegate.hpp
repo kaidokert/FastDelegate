@@ -4,8 +4,8 @@
 //
 //                      - Don Clugston, Mar 2004.
 //      Major contributions were made by Jody Hagins.
-//      Version 2.0 by Paúl Jiménez.
-//      Version 2.0.1 by YanXiang Benjamin Huang
+//      Version 2.0 by Paï¿½l Jimï¿½nez.
+//      Version 2.0.1 by Benjamin YanXiang Huang
 //
 // History:
 // 24-Apr-04 1.0  * Submitted to CodeProject.
