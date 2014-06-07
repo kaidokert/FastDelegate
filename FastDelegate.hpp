@@ -55,8 +55,8 @@
 //                * Use static_assert for compile-time checks (C++11)
 // 21-Jan-14 2.0.1* Fixed 2 typos (line 393 & 429) where a static_cast should have been a static_assert. 
 
-#ifndef FASTDELEGATE_H
-#define FASTDELEGATE_H
+#ifndef FASTDELEGATE_HPP
+#define FASTDELEGATE_HPP
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
@@ -973,4 +973,4 @@ FastDelegate<RetType (Args...)> MakeDelegate(Y* x, RetType (X::*func)(Args...) c
 
 } // namespace fastdelegate
 
-#endif // !defined(FASTDELEGATE_H)
+#endif // !defined(FASTDELEGATE_HPP)
