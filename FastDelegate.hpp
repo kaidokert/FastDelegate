@@ -54,6 +54,7 @@
 //                * Added MakeDelegate for plain function pointers
 //                * Use static_assert for compile-time checks (C++11)
 // 21-Jan-14 2.0.1* Fixed 2 typos (line 393 & 429) where a static_cast should have been a static_assert. 
+// 21-Jun-14 2.0.2* Fixed incorrect union member name in the SimplifyMemFunc struct.
 
 #ifndef FASTDELEGATE_HPP
 #define FASTDELEGATE_HPP
@@ -422,7 +423,7 @@ struct SimplifyMemFunc<SINGLE_MEMFUNCPTR_SIZE + 3*sizeof(int) >
             // In VC++ and ICL, an unknown_inheritance member pointer
             // is internally defined as:
             struct {
-                GenericMemFuncType m_funcaddress; // points to the actual member function
+                GenericMemFuncType funcaddress; // points to the actual member function
                 int delta;      // #bytes to be added to the 'this' pointer
                 int vtordisp;       // #bytes to add to 'this' to find the vtable
                 int vtable_index; // or 0 if no virtual inheritance
